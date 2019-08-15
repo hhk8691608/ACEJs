@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		// alert('hello javascript');
+		// 	<!-- 声明变量 -->
+		// var num1 = 11, num2 =12, num3=13;
+		// console.log('num1 = '+num1);
+		// console.log('num2 = '+num2);
+		// console.log('num3 = '+num3);
+
+		// <!-- 数据类型 -->
+  //   var num = 10;
+  //   var str = "小白";
+  //   var flag = true;
+  //   var nll = null;
+  //   var undef;
+  //   var obj = new Object();
+
+  //   function Person(age,name){
+  //   	this.age = age;
+  //   	this.name =name;
+  //   }
+
+  //   var p1 = new Person(18,'mark');
+    // console.log(typeof p1);
+
+ //    console.log(typeof num);
+ //    console.log(typeof str);
+
+
+	// console.log(typeof flag);
+	// console.log(typeof nll);
+
+
+	// console.log(typeof undef);
+
+	// console.log(typeof obj);
+	// console.log(typeof(num));
+   
+	
+
+	// <!-- 数字类型 -->
+	// var x = 0.1;
+	// var y = 0.2;
+	// var sum = x+y;
+	// console.log(sum === 0.3);  //不要用小数去验证小数.
+
+	// var num111;
+	// var testNum = num111+10;
+	// console.log( testNum == NaN);  //不要用NaN验证是不是NaN
+	// // console.log("您好"=="您好");
+	// // console.log("您好"=="我好");
+	// console.log(testNum);
+	// console.log("isNaN == "+isNaN(testNum)); //判断结果不是一个数字可以使用isNaN(变量名)
+
+
+	// <!-- 字符串类型 -->
+
+	// var str = "10";
+	// var str2 = '20';
+	// var temp = str + 10;
+	// var temp1 = str + str2;
+	// console.log(temp1);
+	// console.log(temp);//str+数字自动转换成str
+
+	// // 如果有一个是字符串,另一个不是字符串,使用- 号,此时会发生计算
+	// var w = "20";
+	// var r = 30;
+	// var tempv = r -w;//浏览器帮助我们自动的把字符串类型转成了数字类型,这种方式叫:隐式转换
+	// var tempw = r*w;
+	// var tempq = r/ w;
+	// console.log("tempv - :"+tempv);
+	// console.log("tempw * :"+tempw);
+	// console.log("tempq / :"+tempq);
+	// // 除了相加之外都会发生隐式转换
+
+
+	// var strr="what "; //字符串的个数有多少个?这个字符串的长度是多少
+	// console.log(strr.length);
+
+
+	// // 转义符 格式 : \XX
+	// console.log("哈哈哈\\尴尬");
+	// console.log("来来来\t订单");
+	// console.log("哈哈\"嘎嘎");
+	// console.log('哈哈\'嘎嘎');
+
+
+
+	// var flag=1;
+ //   console.log(flag);
+
+
+
+ 	// <!-- 类型转换 -->
+ 	// parseInt()
+ 		// console.log(parseInt("10"));
+ 		// console.log(parseInt("10afrswfdsf"));//10
+   //      console.log(parseInt("g10"));//NaN
+   //      console.log(parseInt("1fds0"));//1
+   //      console.log(parseInt("10.98"));//10
+   //      console.log(parseInt("10.98fdsfd"));//10
+
+	// parseFloat()
+   //      console.log(parseFloat("10"));
+ 		// console.log(parseFloat("10afrswfdsf"));//10
+   //      console.log(parseFloat("g10"));//NaN
+   //      console.log(parseFloat("1fds0"));//1
+   //      console.log(parseFloat("10.98"));//10.98
+   //      console.log(parseFloat("10.98fdsfd"));//10.98
+
+ //3.Number();//转数字
+	   // console.log(Number("10"));//10
+	   // console.log(Number("10afrswfdsf"));//NaN
+	   // console.log(Number("g10"));//NaN
+	   // console.log(Number("1fds0"));//NaN
+	   // console.log(Number("10.98"));//10.98
+	   // console.log(Number("10.98fdsfd"));//NaN
+
+
+//总结:想要转整数用parseInt(),想要转小数用parseFloat()
+    //想要转数字:Number();要比上面的两种方式严格
+
+     //	4.其他类型转字符串类型
+     // 1. toString()
+     // var num = 10;
+     // console.log(num.toString());
+     // // 2.String()
+     // var num1 = 20;
+     // console.log(String(num1));
+
+    //如果变量有意义调用.toString()使用转换
+    //如果变量没有意义使用String()转换
+
+
+   var num2;
+   // console.log(num2.toString());
+   var num3=null;
+   // console.log(num3.toString());
+
+   //这个可以
+   var num2;
+   // console.log(String(num2));
+   var num3=null;
+   // console.log(String(num3));
+
+
+	//5.其他类型转布尔类型
+
+	function person(){
+
+	}
+	var p1 = new person();
+	var p2;
+
+    //1  Boolean(值);
+	// console.log(Boolean(1));//true
+ //   console.log(Boolean(0));//false
+ //   console.log(Boolean(11));//true
+ //   console.log(Boolean(-10));//true
+ //   console.log(Boolean("哈哈"));//true
+ //   console.log(Boolean(""));//false
+ //   console.log(Boolean(null));//false
+ //   console.log(Boolean(undefined));//false
+ //   console.log(Boolean(new Object()));//true
+ //   console.log(Boolean(p1 ) );//true
+ //   console.log(Boolean(p2 ) );//false
+   // 这些就是js为啥可以作为判断语句的理由
+
+
+// <!-- 操作符 -->
+   var num1 = 10;
+   var num2 = 20;
+   console.log(num1 === num2&&5>6);//false
+   var num = 20;
+   console.log(num > 10 || 5<0);//true
+
+   var flag = false;
+   console.log(!flag);
+
+   var num = 10;
+   var sum = (num + 10)*5;
+   console.log(sum);//100
+
+   var result = ( 4 >= 6 || '人' != '狗' && !(12*2 == 144) && true);
+   console.log(result);//false --->true??
+
+   var num = 10;
+   var result2 =( 5 == num / 2 && (2 + 2 * num).toString() === '22');
+   console.log(result2);//true
+
+   var num = 20;
+   var result = num %3;
+   console.log(result);//2
+
+   var num=10;
+    var sum=(num+10)+10;
+
+     var num = 20;
+       num %= 5;
+        console.log(num);
+          num=num-5;
+       console.log(num);
+
+
+       var str="5";
+       var num=5;
+       console.log(str===num); //false
+
+
+       console.log(5>10);//false
+       console.log(5>=5);//true
+       console.log(5>3);//true
+       console.log(5==10);//false
+
+//字面量: 把一个值直接赋值给一个变量
+var num=10;
+
+   var flag=true;
+
+   var str="哈哈哈";
+
+   var y=10;
+   var n=y;
+
+
+
+
+
+	</script>
+
+	<input type="button" name="按钮" onclick="alert('click ing ..... ')">
+
+
+
+</body>
+
+
+<script type="text/javascript" src='test.js'/>
+</html>
