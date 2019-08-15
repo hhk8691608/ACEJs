@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		// var o3={gender:"男",grade:"初三",group:"第五组",name:"张三"};
+		// // var 03 = {gender:'man',grade:'class 3',group:'five group',name:'张三'};
+		// var o4 = {... o3};
+		// console.log(o4);
+
+
+	// 继承的第五种方式：借用构造函数实现继承
+
+	function Animal(name,age,gender){
+        this.name=name;
+        this.age=age;
+        this.gender=gender;
+    }
+
+    function Person(name,age,gender,say){
+    	///因为这种函数的调用方式，函数内部的this只能指向window
+    	// Animal(name,age,gender); 
+    	 //目的：将Animal函数内部的this指向Person的实例
+    	 // Animal.call(this,name,age,gender);
+    	  //-->等价于：
+    	 Animal.apply(this,[name,age,gender]);
+
+    	this.say =say;
+    }
+
+    var p1=new Person("宋小宝",15,"男",
+        function(){
+
+    });
+
+
+	</script>
+
+</body>
+</html>

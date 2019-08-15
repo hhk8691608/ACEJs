@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+
+<script type="text/javascript">
+
+	function Dog(){}
+
+	Dog.prototype.say = function(){
+		console.log('汪汪汪');
+	}
+
+	let dog1 = new Dog();
+	let dog2 = new Dog();
+
+	dog1.say();
+	console.log(dog1.say == dog2.say);
+
+
+</script>
+
+</html>

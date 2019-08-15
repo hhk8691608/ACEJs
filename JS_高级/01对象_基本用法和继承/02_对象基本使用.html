@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+
+<script type="text/javascript">
+	//1、创建对象
+	var person = {
+
+		gender:'男',
+		height:185,
+		toShanghai:function(){
+			 console.log('做着高端大气上档次的和谐号动车组');
+		},
+
+		// --------
+		/**
+			这种语法形式是用在对象里面，充当方法的属性的
+		*/
+		say:function(){
+			console.log('hello world!!!');
+		}
+
+	}
+
+	let run = function(){
+		console.log("奔向未来！！！");
+	}
+
+
+
+	//2、获取属性
+	console.log(person.gender);
+	console.log(person['height'])
+	
+	person.toShanghai();
+	person.say();
+
+	//3、设置属性
+	person.weight = 120;
+	
+	person['age'] = 25;
+	person['height'] = 195;
+	console.log(person.height);
+	console.log(person['age']);
+
+	//4、删除属性
+	//delete关键字只能删除对象中的属性，不能删除变量
+	delete person.age;
+	delete person.a;  //这段代码没有意义，也不会报错
+	console.log(person['age']);
+
+
+	//清空对象
+	person = {};
+
+	person=null;    
+    //表示将person变量的值赋为null，从此以后person不再是一个对象了
+
+	run();
+
+</script>
+
+</html>

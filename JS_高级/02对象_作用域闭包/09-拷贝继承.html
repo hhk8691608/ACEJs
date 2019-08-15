@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var o3={gender:"男",grade:"初三",group:"第五组",name:"张三"};
+		// var 03 = {gender:'man',grade:'class 3',group:'five group',name:'张三'};
+		var o4 = {};
+		for(var key in o3){
+			var value = o3[key];
+			o4[key] = value;
+		}
+
+		o4.name = '李四';
+		console.log(o4);
+		console.log(o4 === o3);
+
+	</script>
+
+</body>
+</html>
