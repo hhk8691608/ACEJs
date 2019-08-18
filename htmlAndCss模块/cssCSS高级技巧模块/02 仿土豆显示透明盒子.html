@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	a {
+		display: block;
+		border : 1px solid red;
+		width: 448px;
+		height: 252px;
+		margin: 100px;
+		position: relative;
+
+	}
+
+	.mask {
+		/*border : 10px solid green;*/
+		width: 100%;
+		height: 100%;
+		background:rgba(0, 0, 0, .4) url(images/arr.png) no-repeat center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: none;
+	}
+
+	a:hover .mask {
+		display: block;
+	}
+
+
+	</style>
+</head>
+<body>
+	<a href="#">
+		<img src="images/tudou.jpg" height="252" width="448" alt="">
+		<div class="mask"></div>
+	</a>
+	<a href="#">
+		<img src="images/tudou.jpg" height="252" width="448" alt="">
+		<div class="mask"></div>
+	</a>
+	<a href="#">
+		<img src="images/tudou.jpg" height="252" width="448" alt="">
+		<div class="mask"></div>
+	</a>
+</body>
+</html>
