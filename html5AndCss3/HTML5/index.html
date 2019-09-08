@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        /*nav {*/
+            /*width: 200px;*/
+            /*background-color: red;*/
+        /*}*/
+
+        /*div {*/
+            /*height: 200px;*/
+            /*background-color: pink;*/
+        /*}*/
+
+        /*li span {*/
+            /*color: greenyellow;*/
+        /*}*/
+
+        canvas {
+            border: 1px solid red;
+        }
+
+    </style>
+
+    <!--
+        1.语义标签 --- 只是体现语义，和普通的div一致
+          <nav></nav>  ==> <div class="bac"></div>
+        1.1 语义性解决方案
+            a.document.createElement("nav");
+            b.通过js插件  <script type="text/javascript" src="code/语义标签兼容处理/html5shiv.min.js"></script>
+            c.终极解决方案
+            [if lte IE 8]>
+                <script type="text/javascript" src="code/语义标签兼容处理/html5shiv.min.js"></script>
+            <![endif]
+        2.多媒体设置
+            <video></video> 视频
+                  属性：controls 显示控制栏
+                  属性：autoplay 自动播放
+                 属性：loop  设置循环播放
+            <audio></audio>  音频
+                  属性：controls 显示控制栏
+                  属性：autoplay 自动播放
+                 属性：loop  设置循环播放
+
+        3.智能表单
+        4.
+
+    -->
+
+
+
+</head>
+<body>
+
+
+<canvas width="600" height="400"></canvas>
+<script type="text/javascript">
+
+        var canvas = document.querySelector("canvas");
+        var ctx = canvas.getContext("2d");
+
+
+        // ctx.rect(100,100,200,200);
+        // ctx.stroke();
+        // ctx.clearRect(0,0,600,400);
+
+
+
+
+
+
+
+
+        ctx.beginPath();
+        ctx.moveTo(100,100);
+        ctx.lineTo(100,200);
+        ctx.beginPath();
+        ctx.lineTo(200,200);
+        ctx.closePath();
+        ctx.closePath();
+        ctx.fillStyle="red";
+        ctx.fill();
+
+        // ctx.moveTo(100,100);
+        // ctx.lineTo(300,100);
+        // ctx.stroke();
+        //
+        // ctx.beginPath();
+        // ctx.moveTo(100,150);
+        // ctx.lineTo(300,150);
+        // ctx.strokeStyle="green";
+        // ctx.lineWidth="15";
+        // ctx.stroke();
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<script type="text/javascript">-->
+    <!--window.navigator.geolocation.getCurrentPosition(success,error);-->
+    <!--function success(msg,position) {-->
+        <!--console.log(msg);-->
+        <!--console.dir(position);-->
+    <!--}-->
+    <!--function error(msg,position){-->
+        <!--console.log(msg);-->
+    <!--}-->
+
+    <!--var isFlag = window.navigator.onLine;-->
+    <!--console.log("ononline = "+isFlag);-->
+
+    <!--isFlag = window.navigator.offline;-->
+    <!--console.log("onoffline = "+isFlag);-->
+
+
+<!--</script>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<input type="file" name="">-->
+<!--<script type="text/javascript">-->
+
+    <!--var input = document.querySelector("input");-->
+    <!--input.onchange = ()=>{-->
+
+        <!--var file = this.files[0];-->
+
+        <!--var reader = new FileReader();-->
+
+        <!--reader.readAsText(file);-->
+
+        <!--reader.onload = function(){-->
+            <!--console.log(reader.result);-->
+        <!--}-->
+
+    <!--}-->
+
+<!--</script>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<ul>-->
+    <!--<li>-->
+        <!--<p>-->
+            <!--<span>1</span>-->
+        <!--</p>-->
+    <!--</li>-->
+    <!--<li>-->
+        <!--<span>2</span>-->
+    <!--</li>-->
+<!--</ul>-->
+
+
+<!--<div class="one" data-test-name="123"></div>-->
+
+
+
+<!--<script type="text/javascript">-->
+
+    <!--// document.querySelector("li span").style.color="red";-->
+    <!--//获取标签的自定义属性值-->
+    <!--var list=document.querySelector(".one").dataset;-->
+    <!--list.age = 30;-->
+    <!--list.testHeight=180;-->
+    <!--console.log(list.testName);-->
+    <!--console.log(list.test-name);-->
+<!--</script>-->
+
+
+
+
+
+
+
+<!--<form action="">-->
+    <!--<input type="email" name="email">-->
+    <!--<br/>-->
+    <!--<input type="text" name="em" autofocus placeholder="请输入您要的物品" required>-->
+    <!--<br/>-->
+    <!--<select multiple>-->
+        <!--<option>12</option>-->
+        <!--<option>122</option>-->
+        <!--<option>1222</option>-->
+    <!--</select>-->
+    <!--<br/>-->
+    <!--<input type="text" list="abc"/>-->
+    <!--<datalist id="abc">-->
+        <!--<option value="123">3122</option>-->
+        <!--<option value="123">12312</option>-->
+        <!--<option value="123">12312</option>-->
+        <!--<option value="123">12312</option>-->
+    <!--</datalist>-->
+
+
+    <!--<input type="submit" name="submit">-->
+    <!---->
+    <!---->
+<!--</form>-->
+
+
+
+
+
+
+<!--<video src="./videoImageFile/trailer.mp4" controls autoplay="autoplay"></video>-->
+
+
+
+<!--<nav>我是导航栏</nav>-->
+    <!--<div>这也是导航区域： 没有任何语义</div>-->
+    <!--<header>我是头部区域页眉</header>-->
+    <!--<footer>页脚</footer>-->
+
+    <!--<script>-->
+        <!--var nav = document.createElement("nav");-->
+        <!--console.log(nav);-->
+    <!--</script>-->
+
+
+
+</body>
+</html>
