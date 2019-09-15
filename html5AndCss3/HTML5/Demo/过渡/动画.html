@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>动画</title>
+	<style type="text/css">
+		div {	
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+			position: absolute;
+			left: 0;
+			animation: move 2s ease 0s infinite alternate;
+			/*--webkit-animation: move 2s ease 0s infinite alternate;*/
+		}
+
+
+		@keyframes move {
+			from {
+				left: 0;
+				background-color: red;
+			}
+			to {
+				left: 1000px;
+				background-color: yellow;
+			}
+		}
+
+	</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

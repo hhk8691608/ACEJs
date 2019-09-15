@@ -19,8 +19,17 @@
             /*color: greenyellow;*/
         /*}*/
 
-        canvas {
+       /* canvas {
             border: 1px solid red;
+        }*/
+
+
+        .lineheight {
+        	width: 300px;
+        	height: 200px;
+        	border: 1px red solid;
+        	text-align: center;
+        	line-height: 200px;
         }
 
     </style>
@@ -55,12 +64,12 @@
 </head>
 <body>
 
-
-<canvas width="600" height="400"></canvas>
+<div class="lineheight">123</div>
+<!-- <canvas width="600" height="400"></canvas> -->
 <script type="text/javascript">
 
-        var canvas = document.querySelector("canvas");
-        var ctx = canvas.getContext("2d");
+        // var canvas = document.querySelector("canvas");
+        // var ctx = canvas.getContext("2d");
 
 
         // ctx.rect(100,100,200,200);
@@ -74,15 +83,15 @@
 
 
 
-        ctx.beginPath();
-        ctx.moveTo(100,100);
-        ctx.lineTo(100,200);
-        ctx.beginPath();
-        ctx.lineTo(200,200);
-        ctx.closePath();
-        ctx.closePath();
-        ctx.fillStyle="red";
-        ctx.fill();
+        // ctx.beginPath();
+        // ctx.moveTo(100,100);
+        // ctx.lineTo(100,200);
+        // ctx.beginPath();
+        // ctx.lineTo(200,200);
+        // ctx.closePath();
+        // ctx.closePath();
+        // ctx.fillStyle="red";
+        // ctx.fill();
 
         // ctx.moveTo(100,100);
         // ctx.lineTo(300,100);
